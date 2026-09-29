@@ -9,8 +9,13 @@ the music.
 <br clear="left" />
 
 <p align="center">
-  <img src="Docs/screenshots/launch.png" width="220" />
-  <img src="Docs/screenshots/experience-picker.png" width="220" />
+  <img src="Docs/screenshots/launch.png" width="200" />
+  <img src="Docs/screenshots/experience-picker.png" width="200" />
+  <img src="Docs/screenshots/live-visualizer.png" width="200" />
+</p>
+<p align="center">
+  <img src="Docs/screenshots/tutorial-rhythm.png" width="200" />
+  <img src="Docs/screenshots/visual-guide.png" width="200" />
 </p>
 
 ## How it works
