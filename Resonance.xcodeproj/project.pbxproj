@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E108FE322F50D7FA00A9503A /* PlaybackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E108FE312F50D7FA00A9503A /* PlaybackManager.swift */; };
+		E108FE342F50E04D00A9503A /* SongRuntimeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E108FE332F50E04D00A9503A /* SongRuntimeState.swift */; };
+		E153EDCC2F4B41F2001940B5 /* TextCue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E153EDCB2F4B41F2001940B5 /* TextCue.swift */; };
+		E153EDCE2F4B5C62001940B5 /* tutorial.json in Resources */ = {isa = PBXBuildFile; fileRef = E153EDCD2F4B5C62001940B5 /* tutorial.json */; };
+		E17CD06F2F490E3400D1D894 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17CD06E2F490E3400D1D894 /* HapticManager.swift */; };
+		E1CB97432F46200800587CE3 /* AudioAnalyser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CB96732F46200700587CE3 /* AudioAnalyser.swift */; };
+		E1CB97442F46200800587CE3 /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CB96742F46200700587CE3 /* AudioEngine.swift */; };
+		E1CB97462F46200800587CE3 /* ResonanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CB96792F46200700587CE3 /* ResonanceApp.swift */; };
+		E1CB97472F46200800587CE3 /* VibeClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E1CB96802F46200700587CE3 /* VibeClassifier.mlmodel */; };
+		E1CBCE352F46200800587CE3 /* acoustic.wav in Resources */ = {isa = PBXBuildFile; fileRef = E1CB96712F46200700587CE3 /* acoustic.wav */; };
+		E1CBCE362F46200800587CE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1CB96722F46200700587CE3 /* Assets.xcassets */; };
+		E1CBCE372F46200800587CE3 /* edm.wav in Resources */ = {isa = PBXBuildFile; fileRef = E1CB96762F46200700587CE3 /* edm.wav */; };
+		E1CBCE3A2F46200800587CE3 /* rock.wav in Resources */ = {isa = PBXBuildFile; fileRef = E1CB967A2F46200700587CE3 /* rock.wav */; };
+		E1CBCE4D2F4625FB00587CE3 /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CBCE4C2F4625FB00587CE3 /* DataPoint.swift */; };
+		E1CBCE502F46262A00587CE3 /* VibeSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CBCE4F2F46262A00587CE3 /* VibeSegment.swift */; };
+		E1CBCE522F46265A00587CE3 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CBCE512F46265A00587CE3 /* Song.swift */; };
+		E1CBCE792F4773FF00587CE3 /* edm.json in Resources */ = {isa = PBXBuildFile; fileRef = E1CBCE762F4773FF00587CE3 /* edm.json */; };
+		E1CBCE7B2F4773FF00587CE3 /* rock.json in Resources */ = {isa = PBXBuildFile; fileRef = E1CBCE772F4773FF00587CE3 /* rock.json */; };
+		E1CBCE7C2F4773FF00587CE3 /* acoustic.json in Resources */ = {isa = PBXBuildFile; fileRef = E1CBCE752F4773FF00587CE3 /* acoustic.json */; };
+		E1CBCE7F2F477C2200587CE3 /* RenderEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CBCE7E2F477C2200587CE3 /* RenderEngine.swift */; };
+		E1F40A812F4A681200A02292 /* tutorial.wav in Resources */ = {isa = PBXBuildFile; fileRef = E1F40A802F4A681200A02292 /* tutorial.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E108FE312F50D7FA00A9503A /* PlaybackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackManager.swift; sourceTree = "<group>"; };
+		E108FE332F50E04D00A9503A /* SongRuntimeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongRuntimeState.swift; sourceTree = "<group>"; };
+		E12535EE2F2144D600E151DC /* Resonance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Resonance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E153EDCB2F4B41F2001940B5 /* TextCue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCue.swift; sourceTree = "<group>"; };
+		E153EDCD2F4B5C62001940B5 /* tutorial.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tutorial.json; sourceTree = "<group>"; };
+		E17CD06E2F490E3400D1D894 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		E1CB96612F46200700587CE3 /* bass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bass.wav; sourceTree = "<group>"; };
+		E1CB96622F46200700587CE3 /* bass (1).wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "bass (1).wav"; sourceTree = "<group>"; };
+		E1CB96632F46200700587CE3 /* bass (2).wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "bass (2).wav"; sourceTree = "<group>"; };
+		E1CB96642F46200700587CE3 /* drums.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drums.wav; sourceTree = "<group>"; };
+		E1CB96652F46200700587CE3 /* drums (1).wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "drums (1).wav"; sourceTree = "<group>"; };
+		E1CB96662F46200700587CE3 /* drums (2).wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "drums (2).wav"; sourceTree = "<group>"; };
+		E1CB96672F46200700587CE3 /* drums (3).wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "drums (3).wav"; sourceTree = "<group>"; };
+		E1CB96682F46200700587CE3 /* other.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = other.wav; sourceTree = "<group>"; };
+		E1CB96692F46200700587CE3 /* other (1).wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "other (1).wav"; sourceTree = "<group>"; };
+		E1CB966A2F46200700587CE3 /* other (2).wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "other (2).wav"; sourceTree = "<group>"; };
+		E1CB966B2F46200700587CE3 /* other (3).wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "other (3).wav"; sourceTree = "<group>"; };
+		E1CB966C2F46200700587CE3 /* vocals.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = vocals.wav; sourceTree = "<group>"; };
+		E1CB966D2F46200700587CE3 /* vocals (1).wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "vocals (1).wav"; sourceTree = "<group>"; };
+		E1CB966E2F46200700587CE3 /* vocals (2).wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "vocals (2).wav"; sourceTree = "<group>"; };
+		E1CB966F2F46200700587CE3 /* vocals (3).wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "vocals (3).wav"; sourceTree = "<group>"; };
+		E1CB96712F46200700587CE3 /* acoustic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = acoustic.wav; sourceTree = "<group>"; };
+		E1CB96722F46200700587CE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1CB96732F46200700587CE3 /* AudioAnalyser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioAnalyser.swift; sourceTree = "<group>"; };
+		E1CB96742F46200700587CE3 /* AudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
+		E1CB96762F46200700587CE3 /* edm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = edm.wav; sourceTree = "<group>"; };
+		E1CB96772F46200700587CE3 /* extract_amplitude.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = extract_amplitude.py; sourceTree = "<group>"; };
+		E1CB96782F46200700587CE3 /* low_filter_pass.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = low_filter_pass.py; sourceTree = "<group>"; };
+		E1CB96792F46200700587CE3 /* ResonanceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResonanceApp.swift; sourceTree = "<group>"; };
+		E1CB967A2F46200700587CE3 /* rock.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rock.wav; sourceTree = "<group>"; };
+		E1CB967F2F46200700587CE3 /* vibe_classifier.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = vibe_classifier.py; sourceTree = "<group>"; };
+		E1CB96802F46200700587CE3 /* VibeClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = VibeClassifier.mlmodel; sourceTree = "<group>"; };
+		E1CBCE4C2F4625FB00587CE3 /* DataPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPoint.swift; sourceTree = "<group>"; };
+		E1CBCE4F2F46262A00587CE3 /* VibeSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibeSegment.swift; sourceTree = "<group>"; };
+		E1CBCE512F46265A00587CE3 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		E1CBCE752F4773FF00587CE3 /* acoustic.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = acoustic.json; sourceTree = "<group>"; };
+		E1CBCE762F4773FF00587CE3 /* edm.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = edm.json; sourceTree = "<group>"; };
+		E1CBCE772F4773FF00587CE3 /* rock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = rock.json; sourceTree = "<group>"; };
+		E1CBCE7E2F477C2200587CE3 /* RenderEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderEngine.swift; sourceTree = "<group>"; };
+		E1F40A802F4A681200A02292 /* tutorial.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tutorial.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		E1CBCE7D2F4778B800587CE3 /* View */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E12535EB2F2144D600E151DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E12535E52F2144D600E151DC = {
+			isa = PBXGroup;
+			children = (
+				E1CB96812F46200700587CE3 /* Resonance */,
+				E12535EF2F2144D600E151DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E12535EF2F2144D600E151DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E12535EE2F2144D600E151DC /* Resonance.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1CB96702F46200700587CE3 /* stems */ = {
+			isa = PBXGroup;
+			children = (
+				E1CB96612F46200700587CE3 /* bass.wav */,
+				E1CB96622F46200700587CE3 /* bass (1).wav */,
+				E1CB96632F46200700587CE3 /* bass (2).wav */,
+				E1CB96642F46200700587CE3 /* drums.wav */,
+				E1CB96652F46200700587CE3 /* drums (1).wav */,
+				E1CB96662F46200700587CE3 /* drums (2).wav */,
+				E1CB96672F46200700587CE3 /* drums (3).wav */,
+				E1CB96682F46200700587CE3 /* other.wav */,
+				E1CB96692F46200700587CE3 /* other (1).wav */,
+				E1CB966A2F46200700587CE3 /* other (2).wav */,
+				E1CB966B2F46200700587CE3 /* other (3).wav */,
+				E1CB966C2F46200700587CE3 /* vocals.wav */,
+				E1CB966D2F46200700587CE3 /* vocals (1).wav */,
+				E1CB966E2F46200700587CE3 /* vocals (2).wav */,
+				E1CB966F2F46200700587CE3 /* vocals (3).wav */,
+			);
+			path = stems;
+			sourceTree = "<group>";
+		};
+		E1CB96812F46200700587CE3 /* Resonance */ = {
+			isa = PBXGroup;
+			children = (
+				E1CB96702F46200700587CE3 /* stems */,
+				E1CB96712F46200700587CE3 /* acoustic.wav */,
+				E1CB96722F46200700587CE3 /* Assets.xcassets */,
+				E1CB96732F46200700587CE3 /* AudioAnalyser.swift */,
+				E1CBCE532F46273F00587CE3 /* Controller */,
+				E1CBCE4E2F4625FF00587CE3 /* Model */,
+				E1CBCE7D2F4778B800587CE3 /* View */,
+				E1CB96762F46200700587CE3 /* edm.wav */,
+				E1CB96772F46200700587CE3 /* extract_amplitude.py */,
+				E1CB96782F46200700587CE3 /* low_filter_pass.py */,
+				E1CB96792F46200700587CE3 /* ResonanceApp.swift */,
+				E1CB967A2F46200700587CE3 /* rock.wav */,
+				E1CB967F2F46200700587CE3 /* vibe_classifier.py */,
+				E1CB96802F46200700587CE3 /* VibeClassifier.mlmodel */,
+				E1CBCE752F4773FF00587CE3 /* acoustic.json */,
+				E1CBCE762F4773FF00587CE3 /* edm.json */,
+				E1CBCE772F4773FF00587CE3 /* rock.json */,
+				E153EDCD2F4B5C62001940B5 /* tutorial.json */,
+				E1F40A802F4A681200A02292 /* tutorial.wav */,
+			);
+			path = Resonance;
+			sourceTree = "<group>";
+		};
+		E1CBCE4E2F4625FF00587CE3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E1CBCE4C2F4625FB00587CE3 /* DataPoint.swift */,
+				E1CBCE4F2F46262A00587CE3 /* VibeSegment.swift */,
+				E1CBCE512F46265A00587CE3 /* Song.swift */,
+				E153EDCB2F4B41F2001940B5 /* TextCue.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E1CBCE532F46273F00587CE3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E1CB96742F46200700587CE3 /* AudioEngine.swift */,
+				E1CBCE7E2F477C2200587CE3 /* RenderEngine.swift */,
+				E108FE332F50E04D00A9503A /* SongRuntimeState.swift */,
+				E17CD06E2F490E3400D1D894 /* HapticManager.swift */,
+				E108FE312F50D7FA00A9503A /* PlaybackManager.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E12535ED2F2144D600E151DC /* Resonance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E12535F92F2144D800E151DC /* Build configuration list for PBXNativeTarget "Resonance" */;
+			buildPhases = (
+				E12535EA2F2144D600E151DC /* Sources */,
+				E12535EB2F2144D600E151DC /* Frameworks */,
+				E12535EC2F2144D600E151DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				E1CBCE7D2F4778B800587CE3 /* View */,
+			);
+			name = Resonance;
+			packageProductDependencies = (
+			);
+			productName = Resonance;
+			productReference = E12535EE2F2144D600E151DC /* Resonance.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E12535E62F2144D600E151DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					E12535ED2F2144D600E151DC = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+				};
+			};
+			buildConfigurationList = E12535E92F2144D600E151DC /* Build configuration list for PBXProject "Resonance" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E12535E52F2144D600E151DC;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E12535EF2F2144D600E151DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E12535ED2F2144D600E151DC /* Resonance */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E12535EC2F2144D600E151DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1CBCE352F46200800587CE3 /* acoustic.wav in Resources */,
+				E1CBCE362F46200800587CE3 /* Assets.xcassets in Resources */,
+				E1CBCE372F46200800587CE3 /* edm.wav in Resources */,
+				E1CBCE3A2F46200800587CE3 /* rock.wav in Resources */,
+				E1CBCE792F4773FF00587CE3 /* edm.json in Resources */,
+				E1CBCE7B2F4773FF00587CE3 /* rock.json in Resources */,
+				E1F40A812F4A681200A02292 /* tutorial.wav in Resources */,
+				E153EDCE2F4B5C62001940B5 /* tutorial.json in Resources */,
+				E1CBCE7C2F4773FF00587CE3 /* acoustic.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E12535EA2F2144D600E151DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E153EDCC2F4B41F2001940B5 /* TextCue.swift in Sources */,
+				E1CBCE4D2F4625FB00587CE3 /* DataPoint.swift in Sources */,
+				E1CBCE502F46262A00587CE3 /* VibeSegment.swift in Sources */,
+				E1CB97432F46200800587CE3 /* AudioAnalyser.swift in Sources */,
+				E1CBCE7F2F477C2200587CE3 /* RenderEngine.swift in Sources */,
+				E108FE322F50D7FA00A9503A /* PlaybackManager.swift in Sources */,
+				E108FE342F50E04D00A9503A /* SongRuntimeState.swift in Sources */,
+				E1CB97442F46200800587CE3 /* AudioEngine.swift in Sources */,
+				E17CD06F2F490E3400D1D894 /* HapticManager.swift in Sources */,
+				E1CBCE522F46265A00587CE3 /* Song.swift in Sources */,
+				E1CB97462F46200800587CE3 /* ResonanceApp.swift in Sources */,
+				E1CB97472F46200800587CE3 /* VibeClassifier.mlmodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E12535F72F2144D800E151DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 246RGWZ5HR;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E12535F82F2144D800E151DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 246RGWZ5HR;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E12535FA2F2144D800E151DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Resonance/Resonance/lib/python3.10/site-packages/_soundfile_data",
+					"$(PROJECT_DIR)/Resonance/Resonance/lib/python3.10/site-packages/coremltools",
+					"$(PROJECT_DIR)/Resonance/Resonance/lib/python3.10/site-packages/google/_upb",
+					"$(PROJECT_DIR)/Resonance/Resonance/lib/python3.10/site-packages/llvmlite/binding",
+					"$(PROJECT_DIR)/Resonance/Resonance/lib/python3.10/site-packages/numpy/_core/lib",
+					"$(PROJECT_DIR)/Resonance/Resonance/lib/python3.10/site-packages/numpy/random/lib",
+					"$(PROJECT_DIR)/Resonance/Resonance/lib/python3.10/site-packages/scipy/.dylibs",
+					"$(PROJECT_DIR)/Resonance/Resonance/lib/python3.10/site-packages/scipy/special",
+					"$(PROJECT_DIR)/Resonance/Resonance/lib/python3.10/site-packages/sklearn/.dylibs",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abhireddy.Resonance;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E12535FB2F2144D800E151DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Resonance/Resonance/lib/python3.10/site-packages/_soundfile_data",
+					"$(PROJECT_DIR)/Resonance/Resonance/lib/python3.10/site-packages/coremltools",
+					"$(PROJECT_DIR)/Resonance/Resonance/lib/python3.10/site-packages/google/_upb",
+					"$(PROJECT_DIR)/Resonance/Resonance/lib/python3.10/site-packages/llvmlite/binding",
+					"$(PROJECT_DIR)/Resonance/Resonance/lib/python3.10/site-packages/numpy/_core/lib",
+					"$(PROJECT_DIR)/Resonance/Resonance/lib/python3.10/site-packages/numpy/random/lib",
+					"$(PROJECT_DIR)/Resonance/Resonance/lib/python3.10/site-packages/scipy/.dylibs",
+					"$(PROJECT_DIR)/Resonance/Resonance/lib/python3.10/site-packages/scipy/special",
+					"$(PROJECT_DIR)/Resonance/Resonance/lib/python3.10/site-packages/sklearn/.dylibs",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abhireddy.Resonance;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E12535E92F2144D600E151DC /* Build configuration list for PBXProject "Resonance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E12535F72F2144D800E151DC /* Debug */,
+				E12535F82F2144D800E151DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E12535F92F2144D800E151DC /* Build configuration list for PBXNativeTarget "Resonance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E12535FA2F2144D800E151DC /* Debug */,
+				E12535FB2F2144D800E151DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E12535E62F2144D600E151DC /* Project object */;
+}

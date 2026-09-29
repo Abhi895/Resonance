@@ -1,0 +1,15 @@
+# Python virtualenv (accidentally created inside Resonance/Resonance/)
+Resonance/Resonance/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Xcode
+xcuserdata/
+*.xcuserstate
+DerivedData/
+.DS_Store
