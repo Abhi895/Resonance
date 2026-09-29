@@ -1,8 +1,18 @@
+<img src="Docs/screenshots/icon.png" width="72" align="left" style="margin-right: 12px" />
+
 # Resonance
 
 An iOS app that turns a song into something you feel, not just hear —
 real-time haptic and visual feedback driven by what's actually happening in
 the music.
+
+<br clear="left" />
+
+<p align="center">
+  <img src="Docs/screenshots/launch.png" width="220" />
+  <img src="Docs/screenshots/experience-picker.png" width="220" />
+  <img src="Docs/screenshots/live-visualizer.png" width="220" />
+</p>
 
 ## How it works
 
