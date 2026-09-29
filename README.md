@@ -11,7 +11,6 @@ the music.
 <p align="center">
   <img src="Docs/screenshots/launch.png" width="220" />
   <img src="Docs/screenshots/experience-picker.png" width="220" />
-  <img src="Docs/screenshots/live-visualizer.png" width="220" />
 </p>
 
 ## How it works
